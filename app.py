@@ -1,4 +1,8 @@
 import streamlit as st
+import pandas as pd
+import requests
 
 st.title("OCR Invoice Monitoring")
-st.write("Click Fetch to load data")
+
+if st.button("Fetch"):
+    st.info("Calling Staple OCR API...")
